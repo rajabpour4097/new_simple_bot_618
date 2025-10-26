@@ -90,7 +90,13 @@ DYNAMIC_RISK_CONFIG = {
             'id': 'stage_1_75R',
             'trigger_R': 1.75,
             'sl_lock_R': 1.75,
-            'tp_R': 2.5
+            'tp_R': 2.0
+        },
+        {  # 2.0R stage
+            'id': 'stage_2_0R',
+            'trigger_R': 2.0,
+            'sl_lock_R': 2.0,
+            'tp_R': 3.0
         },
         {  # 3.0R stage
             'id': 'stage_3_0R',
