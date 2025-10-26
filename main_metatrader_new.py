@@ -533,7 +533,7 @@ def main():
                     # ارسال ایمیل غیرمسدودکننده
                     try:
                         send_trade_email_async(
-                            subject=f"NEW BUY ORDER {MT5_CONFIG['symbol']}",
+                            subject=f"NEW BUY ORDER {MT5_CONFIG['symbol']} 618",
                             body=(
                                 f"Time: {datetime.now()}\n"
                                 f"Symbol: {MT5_CONFIG['symbol']}\n"
@@ -552,7 +552,7 @@ def main():
                         # ارسال ایمیل غیرمسدودکننده
                         try:
                             send_trade_email_async(
-                                subject = f"Last order result",
+                                subject = f"Last order result 618",
                                 body=(
                                     f"Ticket={result.order}\n"
                                     f"Price={result.price}\n"
@@ -652,7 +652,7 @@ def main():
                     # ارسال ایمیل غیرمسدودکننده
                     try:
                         send_trade_email_async(
-                            subject=f"NEW SELL ORDER {MT5_CONFIG['symbol']}",
+                            subject=f"NEW SELL ORDER {MT5_CONFIG['symbol']} 618",
                             body=(
                                 f"Time: {datetime.now()}\n"
                                 f"Symbol: {MT5_CONFIG['symbol']}\n"
@@ -671,7 +671,7 @@ def main():
                         # ارسال ایمیل غیرمسدودکننده
                         try:
                             send_trade_email_async(
-                                subject = f"Last order result",
+                                subject = f"Last order result 618",
                                 body=(
                                     f"Ticket={result.order}\n"
                                     f"Price={result.price}\n"
