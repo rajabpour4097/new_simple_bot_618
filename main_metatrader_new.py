@@ -112,7 +112,7 @@ def main():
             'risk': risk,
             'direction': 'buy' if pos.type == mt5.POSITION_TYPE_BUY else 'sell',
             'done_stages': set(),
-            'base_tp_R': DYNAMIC_RISK_CONFIG.get('base_tp_R', 2),
+            'base_tp_R': DYNAMIC_RISK_CONFIG.get('base_tp_R', 1.75),
             'commission_locked': False
         }
         # رویداد ثبت پوزیشن

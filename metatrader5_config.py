@@ -51,7 +51,7 @@ MY_CUSTOM_TIME_IRAN = {
 MT5_CONFIG = {
     'symbol': 'EURUSD',
     'lot_size': 0.01,
-    'win_ratio': 2,
+    'win_ratio': 1.75,
     'magic_number': 234000,
     'deviation': 20,
     'max_spread': 3.0,
@@ -84,13 +84,13 @@ DYNAMIC_RISK_CONFIG = {
     'commission_per_lot': 4.5,          # کمیسیون کل (رفت و برگشت یا فقط رفت؟ طبق بروکر - قابل تنظیم)
     'commission_mode': 'per_lot',       # per_lot (کل)، per_side (نیمی از رفت و برگشت) در صورت نیاز توسعه
     'round_trip': False,                # اگر True و per_side باشد دو برابر می‌کند
-    'base_tp_R': 2.0,                   # TP اولیه تنظیم‌شده هنگام ورود (برای مرجع)
+    'base_tp_R': 1.75,                  # TP اولیه تنظیم‌شده هنگام ورود (برای مرجع)
     'stages': [
-        {  # 2.0R stage
-            'id': 'stage_2_0R',
-            'trigger_R': 2.0,
-            'sl_lock_R': 2.0,
-            'tp_R': 3.0
+        {  # 1.75R stage
+            'id': 'stage_1_75R',
+            'trigger_R': 1.75,
+            'sl_lock_R': 1.75,
+            'tp_R': 2.5
         },
         {  # 3.0R stage
             'id': 'stage_3_0R',
